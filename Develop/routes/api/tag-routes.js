@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const { noExtendLeft } = require('sequelize/types/lib/operators');
 const { Tag, Product, ProductTag } = require('../../models');
 
 // The `/api/tags` endpoint
@@ -19,21 +20,6 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/:id', async (req, res) => {
-  // find a single tag by its `id`
-  // be sure to include its associated Product data
-  try {
-    const getTag = await Tag.findByPk(req.params.id, {
-      include: [{
-        model: Product
-      }]
-    })
-    
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
 router.post('/', async (req, res) => {
   // create a new tag
   try {
@@ -45,6 +31,37 @@ router.post('/', async (req, res) => {
   }
 });
 
+router.use('/:id', async (req, res, next) => {
+  try {
+    const idData = await Tag.findByPk(req.params.id);
+
+    if (!idData) {
+      res.status(404).json({ message: `Tag ID: ${req.params.id} Not Found`});
+    } else {
+      next();
+    }
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get('/:id', async (req, res) => {
+  // find a single tag by its `id`
+  // be sure to include its associated Product data
+  try {
+    const getTag = await Tag.findByPk(req.params.id, {
+      include: [{
+        model: Product
+      }]
+    })
+    
+    res.status(200).json(getTag);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+
 router.put('/:id', async (req, res) => {
   // update a tag's name by its `id` value
   try{
@@ -53,10 +70,6 @@ router.put('/:id', async (req, res) => {
         id: req.params.id
       }
     });
-
-    if (!updateTag) {
-      return res.status(404).json({message: `Tag ID: ${req.params.id} Not Found`});
-    }
 
     res.status(200).json(updateTag);
   } catch(err){
@@ -72,10 +85,6 @@ router.delete('/:id', async (req, res) => {
         id: req.params.id
       }
     });
-
-    if (!deleteTag) {
-      return res.status(404).json({message: `Tag ID: ${req.params.id} Not Found`});
-    }
 
     res.status(200).json(deleteTag);
   } catch (err) {
