@@ -1,4 +1,4 @@
-# README Team Profile Generator
+# README E-Commerce Back End
 
   ### [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -79,7 +79,7 @@ Jorge Cardenas
 
 ## Tests
 
-Go to the test folder and run the test in your terminal with the following command: 'npm test'.
+No tests.
 
 ## Questions
 
@@ -89,6 +89,6 @@ You can send an e-mail to Jorgecdl96@gmail.com for any additional question.
 
 ## Walkthrough Video
 
-You can see in the video how all the tests pass and the Team Profile generated within 'dist' folder by clicking on link below:
+You can see in the video how all the routes work within the project.
 
-[Team Profile Generator Video](https://drive.google.com/file/d/1-BpQqAwhmI74hMqcrdTjF1IAGzQgEkFl/view?usp=sharing)
+[Team Profile Generator Video]()
