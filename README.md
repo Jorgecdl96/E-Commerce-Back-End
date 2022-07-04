@@ -97,8 +97,14 @@ You can send an e-mail to Jorgecdl96@gmail.com for any additional question.
 
 ## Walkthrough Video
 
-You can see in the videos the installation process and how the method works perfectly in all the routes.
+You can see in the video how to create and seed a database and how to run the application´s server.
 
 [Installation process](https://drive.google.com/file/d/1XdsBgSIusNM8V6ij0NrJOa9Yv2rzTr3d/view?usp=sharing)
 
-[E-commerce Back End Video](https://drive.google.com/file/d/1vEK9mr5n33eFOmfG-UEjbqIArNl9dQce/view?usp=sharing)
+The [E-commerce Back End Video](https://drive.google.com/file/d/1AYWff5HQNRjgi8EL3-83cwDIBXHVsuqM/view?usp=sharing) demonstrate the following: 
+
+* GET routes for all categories, all products, and all tags being tested in Insomnia.
+* GET routes for a single category, a single product, and a single tag being tested in Insomnia.
+* POST, PUT, and DELETE routes for categories, products, and tags being tested in Insomnia.
+
+
