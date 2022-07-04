@@ -54,9 +54,9 @@ The Package json is already added in this project, so you should only have to in
 
 We can see below how our method GET it´s pulling the data stored in categories, products and tags.
 
-[category](./Assets/category%20method%20Get.png)
-[products](./Assets/products%20method%20Get.png)
-[tags](./Assets/tags%20method%20Get.png)
+![category](./Assets/category%20method%20Get.png)
+![products](./Assets/products%20method%20Get.png)
+![tags](./Assets/tags%20method%20Get.png)
 ## License
 
 ### MIT License (https://opensource.org/licenses/MIT)
@@ -100,4 +100,5 @@ You can send an e-mail to Jorgecdl96@gmail.com for any additional question.
 You can see in the videos the installation process and how the method works perfectly in all the routes.
 
 [Installation process](https://drive.google.com/file/d/1XdsBgSIusNM8V6ij0NrJOa9Yv2rzTr3d/view?usp=sharing)
-[E-commerce Back End Video]()
+
+[E-commerce Back End Video](https://drive.google.com/file/d/1vEK9mr5n33eFOmfG-UEjbqIArNl9dQce/view?usp=sharing)
