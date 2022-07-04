@@ -19,6 +19,7 @@ This app has been built with the follwoing technologies:
 
   - [Installation](#installation)
   - [Usage](#usage)
+  - [Mock-Up](#mock-up)
   - [License](#license)
   - [Contribution](#contribution)
   - [Tests](#tests)
@@ -49,6 +50,13 @@ The Package json is already added in this project, so you should only have to in
 
 6. Finally, we go to server.js and open a new Terminal and then run the server with 'node server.js' to interact with the routes and database created.
 
+## Mock-Up
+
+We can see below how our method GET it´s pulling the data stored in categories, products and tags.
+
+[category](./Assets/category%20method%20Get.png)
+[products](./Assets/products%20method%20Get.png)
+[tags](./Assets/tags%20method%20Get.png)
 ## License
 
 ### MIT License (https://opensource.org/licenses/MIT)
