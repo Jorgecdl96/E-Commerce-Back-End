@@ -97,7 +97,7 @@ You can send an e-mail to Jorgecdl96@gmail.com for any additional question.
 
 ## Walkthrough Video
 
-You can see in the video how all the routes work within the project.
+You can see in the videos the installation process and how the method works perfectly in all the routes.
 
 [Installation process](https://drive.google.com/file/d/1XdsBgSIusNM8V6ij0NrJOa9Yv2rzTr3d/view?usp=sharing)
 [E-commerce Back End Video]()
